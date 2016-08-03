@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<title>Astro Weight Calculator</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<header class="main-header">
+		<img class="astronaut" src="http://www.sssharber.org/webquest/wp-content/uploads/2014/11/astronaut.png">
+		<h1 id="title">Astro Weight Calculator</h1>
+	</header>
+
+	
+	<div>
+		<label>Enter your weight in lbs: <input type="number" id="enteredEarthWeight"/> </label>
+	</div>
+
+	<div>
+		<select id="planetSelection">
+			<option value="27.9" text="The Sun">The Sun</option>
+			<option value="0.377" text="Mercury">Mercury</option>
+			<option value="0.9032" text="Venus">Venus</option>
+			<option value="1" text="Earth">Earth</option>
+			<option value="0.3895" text="Mars">Mars</option>
+			<option value="0.1655" text="The Moon">The Moon</option>
+			<option value="2.64" text="Jupiter">Jupiter</option>
+			<option value="1.139" text="Saturn">Saturn</option>
+			<option value="0.917" text="Uranus">Uranus</option>
+			<option value="1.148" text="Neptune">Neptune</option>
+			<option value="0.06" text="Pluto">Pluto</option>
+		</select>
+	</div>
+
+	<button onclick="calculatePlanetWeight()">Submit Weight</button>
+	<p id="weightOutput"></p>
+	
+	<script src="index.js"></script>
+</body>
+</html>
